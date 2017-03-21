@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const chalk = require('chalk');
 const nunjucks = require('nunjucks');
-const router=require('./routes');
+const router = require('./routes');
 
 const db = require('./db').db;
 
@@ -18,9 +18,9 @@ app.engine('html', nunjucks.render);
 app.set('view engine', 'html');
 
 app.use(express.static('public'));
-app.use('/bootstrap', express.static('./node_modules/bootstrap/dist'));
-app.use('/jquery', express.static('./node_modules/jquery/dist'));
-app.use('/',router);
+app.use('/bootstrap', express.static('node_modules/bootstrap/dist'));
+app.use('/jquery', express.static('node_modules/jquery/dist'));
+app.use('/', router);
 
 // root path
 app.get('/', function(req, res, next) {
