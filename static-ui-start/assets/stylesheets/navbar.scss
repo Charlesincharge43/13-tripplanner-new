@@ -1,8 +1,11 @@
 $nav-bg: #ddd;
 $nav-txt: #444;
 
+
 .navbar {
   padding: 0 40px;
+  z-index: 2;
+  margin-bottom:0;
   background-color: $nav-bg;
   a {
     color: $nav-txt;
@@ -26,7 +29,7 @@ $nav-txt: #444;
 .navbar-brand {
   float: left;
   font-size: 1.2em;
-  margin-top: 13px;
+  // margin-top: 13px;
 }
 
 .navbar-right {

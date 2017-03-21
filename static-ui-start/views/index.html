@@ -6,7 +6,11 @@
 {% block content %}
 
 <div class='fixedright sidebar'>
-            <div class='findclass'>
+
+  <div id='sidebar-Filler'>
+  </div>
+
+            <div class='findclass colorschemeLight shadowradius'>
               <div>
                 <p>Hotels</p>
                 <select class='dropdown'>
@@ -14,7 +18,7 @@
                   <option value={{hotel.name}}>{{hotel.name}}</option>
                 {% endfor %}
                 </select>
-                <button id='hotel-submit' class='btn btn-success'>X</button>
+                <button id='hotel-submit' class='btn btn-success btnsmall'>+</button>
               </div>
 
               <div>
@@ -24,7 +28,7 @@
                   <option value={{restaurant.name}}>{{restaurant.name}}</option>
                 {% endfor %}
                 </select>
-                <button id='rest-submit' class='btn btn-success'>X</button>
+                <button id='rest-submit' class='btn btn-success btnsmall'>+</button>
               </div>
 
               <div>
@@ -34,24 +38,33 @@
                   <option value={{activity.name}}>{{activity.name}}</option>
                 {% endfor %}
                 </select>
-                <button id='act-submit' class='btn btn-success'>X</button>
+                <button id='act-submit' class='btn btn-success btnsmall'>+</button>
               </div>
             </div>
-            <h3>DAY 2</h3>
 
-            <div class='days'>
-              <div class='days-nav'>
-                <button id='day1-button' class='btn btn-success'>1</button>
+
+            <div class='filler'></div>
+
+
+            <div class='days shadowradius'>
+              <div class='days-nav colorschemeMedium'>
+                <div class='buttonDiv'>
+                  <button id='day1-button' class='btn btn-success'>1</button>
+                  <button id='day2-button' class='btn btn-success'>2</button>
+                  <button id='day3-button' class='btn btn-success'>3</button>
+                  <button id='add-day-button' class='btn btn-success'>+</button>
+                </div>
               </div>
-              <div class='days-contents'>
+              <div class='days-contents colorschemeLight'>
+                <h3 class='text-center h3-trim-top'>DAY 2</h3>
                 <p>My Hotel</p>
-                <ul><li>[[xxxxxxx]] <button id='rem-hotel' class='btn btn-danger'>x</button></li></ul>
+                <ul><li>[[xxxxxxxxxxxxxx]] <button id='rem-hotel' class='btn btn-danger btnsmall'>x</button></li></ul>
 
                 <p>My Restaurant</p>
-                <ul><li>[[xxxxxxx]] <button id='rem-rest' class='btn btn-danger'>x</button></li></ul>
+                <ul><li>[[xxxxxxxxxxxxxx]] <button id='rem-rest' class='btn btn-danger btnsmall'>x</button></li></ul>
 
                 <p>My Activities</p>
-                <ul><li>[[xxxxxxx]] <button id='rem-act' class='btn btn-danger'>x</button></li></ul>
+                <ul><li>[[xxxxxxxxxxxxxx]] <button id='rem-act' class='btn btn-danger btnsmall'>x</button></li></ul>
 
               </div>
 
@@ -62,9 +75,19 @@
 
 </div>
 
-<!API key for googlemaps: AIzaSyDOisLKopYkm7Wh1K6IMtU6oT44mOnBpt8>
+<!
+  width="600"
+  height="450">
 
-<img src='http://i.imgur.com/tdie5Mi.jpg' style='width:75%'></img>
+<!API key for googlemaps: AIzaSyDOisLKopYkm7Wh1K6IMtU6oT44mOnBpt8>
+<div id='mapDiv'>
+  <iframe
+  width=100%
+  height=100%
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDOisLKopYkm7Wh1K6IMtU6oT44mOnBpt8&q=Willis+Tower,Chicago+IL" allowfullscreen>
+  </iframe>
+</div>
 
 
 
