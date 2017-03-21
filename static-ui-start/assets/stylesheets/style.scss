@@ -1,0 +1,45 @@
+@import 'navbar';
+
+// body {//*** better way to do it?
+//   margin-top:64px;
+// }
+
+.fixedright {
+  position: fixed;
+  right:0;
+  bottom: 0;
+}
+
+.sidebar {
+  height:92%;
+  width:25%;
+  background-color: limegreen;
+}
+
+.floaters {
+  float: right;
+}
+
+.findclass {
+  background-color: yellow;
+  padding: 2%;
+}
+
+.dropdown {
+  width:75%;
+}
+
+.days-nav{
+  background-color: orange;
+  padding: 2%;
+}
+
+.days-contents {
+  background-color: pink;
+  padding: 2%;
+  height: 100%;
+}
+
+.days {
+  height: 100%;
+}

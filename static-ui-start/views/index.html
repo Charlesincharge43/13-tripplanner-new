@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block title %}Your Trip{% endblock %}
+
+
+{% block content %}
+
+<div class='fixedright sidebar'>
+            <div class='findclass'>
+              <div>
+                <p>Hotels</p>
+                <select class='dropdown'>
+                {% for hotel in templateHotels %}
+                  <option value={{hotel.name}}>{{hotel.name}}</option>
+                {% endfor %}
+                </select>
+                <button id='hotel-submit' class='btn btn-success'>X</button>
+              </div>
+
+              <div>
+                <p>Restaurants</p>
+                <select class='dropdown'>
+                {% for restaurant in templateRestaurants %}
+                  <option value={{restaurant.name}}>{{restaurant.name}}</option>
+                {% endfor %}
+                </select>
+                <button id='rest-submit' class='btn btn-success'>X</button>
+              </div>
+
+              <div>
+                <p>Things To Do</p>
+                <select class='dropdown'>
+                {% for activity in templateActivities %}
+                  <option value={{activity.name}}>{{activity.name}}</option>
+                {% endfor %}
+                </select>
+                <button id='act-submit' class='btn btn-success'>X</button>
+              </div>
+            </div>
+            <h3>DAY 2</h3>
+
+            <div class='days'>
+              <div class='days-nav'>
+                <button id='day1-button' class='btn btn-success'>1</button>
+              </div>
+              <div class='days-contents'>
+                <p>My Hotel</p>
+                <ul><li>[[xxxxxxx]] <button id='rem-hotel' class='btn btn-danger'>x</button></li></ul>
+
+                <p>My Restaurant</p>
+                <ul><li>[[xxxxxxx]] <button id='rem-rest' class='btn btn-danger'>x</button></li></ul>
+
+                <p>My Activities</p>
+                <ul><li>[[xxxxxxx]] <button id='rem-act' class='btn btn-danger'>x</button></li></ul>
+
+              </div>
+
+
+            </div>
+
+
+
+</div>
+
+<!API key for googlemaps: AIzaSyDOisLKopYkm7Wh1K6IMtU6oT44mOnBpt8>
+
+<img src='http://i.imgur.com/tdie5Mi.jpg' style='width:75%'></img>
+
+
+
+
+
+{% endblock %}
