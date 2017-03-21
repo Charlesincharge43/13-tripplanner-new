@@ -5,12 +5,12 @@
 
 {% block content %}
 
-<div class='fixedright sidebar'>
+<div class='fixed-dynamic sidebar'>
 
   <div id='sidebar-Filler'>
   </div>
 
-            <div class='findclass colorschemeLight shadowradius'>
+            <div class='fixed-bottomDyn findclass colorschemeLight shadowradius bigger-blocks'>
               <div>
                 <p>Hotels</p>
                 <select class='dropdown'>
@@ -46,17 +46,23 @@
             <div class='filler'></div>
 
 
-            <div class='days shadowradius'>
+            <div class='fixed-rightDyn days shadowradius bigger-blocks'>
               <div class='days-nav colorschemeMedium'>
                 <div class='buttonDiv'>
-                  <button id='day1-button' class='btn btn-success'>1</button>
-                  <button id='day2-button' class='btn btn-success'>2</button>
-                  <button id='day3-button' class='btn btn-success'>3</button>
-                  <button id='add-day-button' class='btn btn-success'>+</button>
+                  <div style="float: right">
+                    <button id='day1-button' class='btn btn-success btn-day'>1</button>
+                    <button id='day2-button' class='btn btn-success btn-day'>2</button>
+                    <button id='day3-button' class='btn btn-success btn-day'>3</button>
+                    <button id='add-day-button' class='btn btn-success btn-day'>+</button>
+                    <!--<h3 class='text-right h3-trim-top' style='display: block'>DAY 2</h3>-->
+                  </div>
+                  <div>
+                    <h3 class='text-center h3-trim-top'>DAY 2</h3>
+                  </div>
                 </div>
               </div>
               <div class='days-contents colorschemeLight'>
-                <h3 class='text-center h3-trim-top'>DAY 2</h3>
+                <!--<h3 class='text-center h3-trim-top'>DAY 2</h3>-->
                 <p>My Hotel</p>
                 <ul><li>[[xxxxxxxxxxxxxx]] <button id='rem-hotel' class='btn btn-danger btnsmall'>x</button></li></ul>
 

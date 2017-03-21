@@ -1,12 +1,15 @@
 $nav-bg: #ddd;
 $nav-txt: #444;
+$nav-alt: #009999;
+// $nav-alt: RGB(84, 144, 242);
+// #00cc99
 
 
 .navbar {
   padding: 0 40px;
   z-index: 2;
   margin-bottom:0;
-  background-color: $nav-bg;
+  background-color: $nav-alt;
   a {
     color: $nav-txt;
     text-decoration: none;

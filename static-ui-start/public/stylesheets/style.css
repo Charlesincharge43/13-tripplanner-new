@@ -2,7 +2,7 @@
   padding: 0 40px;
   z-index: 2;
   margin-bottom: 0;
-  background-color: #ddd; }
+  background-color: #009999; }
   .navbar a {
     color: #444;
     text-decoration: none; }
@@ -28,6 +28,28 @@
   top: 0;
   width: 100%; }
 
+@media screen and (max-width: 768px) {
+  .fixed-dynamic {
+    position: fixed;
+    left: 0;
+    bottom: 0; }
+  .fixed-bottomDyn {
+    position: fixed;
+    left: 0;
+    bottom: 0; }
+  .fixed-rightDyn {
+    position: fixed;
+    right: 0;
+    bottom: 0; }
+  .bigger-blocks {
+    width: 45%; } }
+
+@media screen and (min-width: 768px) {
+  .fixed-dynamic {
+    position: fixed;
+    right: 0;
+    bottom: 0; } }
+
 #plannerIcon {
   margin-top: 9px;
   margin-right: 6px;
@@ -52,17 +74,12 @@
 .filler {
   height: 25px; }
 
-.fixedright {
-  position: fixed;
-  right: 0;
-  bottom: 0; }
-
 .sidebar {
   z-index: 1;
   height: 100%;
   width: 25%; }
 
-.floaters {
+.float-right {
   float: right; }
 
 .findclass {
@@ -92,10 +109,10 @@
   background-color: RGB(53, 125, 242); }
 
 .colorschemeMedium {
-  background-color: RGB(84, 144, 242); }
+  background-color: #009999; }
 
 .colorschemeLight {
-  background-color: RGB(191, 215, 255); }
+  background-color: #e6e6e6; }
 
 .h3-trim-top {
   margin-top: 10px; }
@@ -112,3 +129,8 @@
 
 .text-right {
   text-align: right; }
+
+.btn-day {
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+  color: #000000; }

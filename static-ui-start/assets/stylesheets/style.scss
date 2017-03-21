@@ -1,4 +1,5 @@
 @import 'navbar';
+@import 'media-queries';
 
 // body {//*** better way to do it?
 //   margin-top:64px;
@@ -43,11 +44,19 @@
   height:25px;
 }
 
-.fixedright {
-  position: fixed;
-  right:0;
-  bottom: 0;
-}
+// .fixed-right {
+//   position: fixed;
+//   right:0;
+//   bottom: 0;
+// }
+
+// .fixed-bottom {
+//   position: fixed;
+//   left: 0;
+//   bottom: 0;
+// }
+
+// .fixed-dyanmic {}
 
 .sidebar {
   z-index: 1;
@@ -55,7 +64,7 @@
   width:25%;
 }
 
-.floaters {
+.float-right {
   float: right;
 }
 
@@ -92,12 +101,16 @@
 }
 
 .colorschemeMedium {
-  background-color: RGB(84, 144, 242);
+  // background-color: RGB(84, 144, 242);
+  background-color: #009999
 }
 
 .colorschemeLight {
   // background-color: RGB(121, 169, 247);
-  background-color: RGB(191, 215, 255);
+  // background-color: RGB(191, 215, 255);
+  // background-color: #f2f2f2
+  background-color: #e6e6e6
+  // background-color: #b3ffff
 }
 
 .h3-trim-top {
@@ -129,4 +142,14 @@
 
 .text-right {
   text-align: right;
+}
+
+// #button-bar {
+//   float: right
+// }
+
+.btn-day {
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+  color: #000000;
 }

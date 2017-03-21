@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+    .fixed-dynamic {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .fixed-bottomDyn {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .fixed-rightDyn {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    .bigger-blocks {
+        width: 45%
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fixed-dynamic {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+}
